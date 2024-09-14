@@ -1,0 +1,17 @@
+<div class="sidenav-header">
+    <img src="https://github.com/zentoo31.png" class= "rounded-circle" [width]="profilePicSize()" [height]="profilePicSize()">
+    <div class="sidenav-text" [class.hide-sidenav-text] = "sideNavCollapsed()">
+        <h2>Tu perfil</h2>
+        <p>zentoo31</p>
+    </div>
+</div>
+<mat-nav-list>
+    @for (item of menuItem(); track $index) {
+        <a mat-list-item>
+            <mat-icon matListItemIcon>{{item.icon}}</mat-icon>
+            @if (!sideNavCollapsed()) {
+                <span matListItemTitle>{{item.label}}</span>
+            }
+        </a>
+    }
+</mat-nav-list>
