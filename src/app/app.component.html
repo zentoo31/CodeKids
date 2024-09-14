@@ -1,17 +1,1 @@
-<mat-toolbar class="mat-elevation-z3">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="collapsed.set(!collapsed())">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <app-header></app-header>
-</mat-toolbar>
-
-<mat-sidenav-container>
-    <mat-sidenav opened="true" mode="side" [style.width]="sideNavWidth()" color="accent"color="accent"color="mat-primary">
-        <app-sidenav [collapsed] = "collapsed()"></app-sidenav>
-    </mat-sidenav>
-    <mat-sidenav-content class="content" [style.margin-left]="sideNavWidth()">
-        <div [@fadeAnimation] = "outlet.isActivated ? outlet.activatedRoute : ''"  [@fadeAnimation] = "mode">
-            <router-outlet #outlet = "outlet"></router-outlet>
-        </div>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+<router-outlet></router-outlet>
