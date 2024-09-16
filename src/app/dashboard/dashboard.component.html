@@ -9,8 +9,8 @@
         <app-sidenav [collapsed] = "collapsed()"></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content class="content" [style.margin-left]="sideNavWidth()">
-        <div [@fadeAnimation] = "outlet.isActivated ? outlet.activatedRoute : ''"  [@fadeAnimation] = "mode">
-            <router-outlet #outlet = "outlet"></router-outlet>
+        <div>
+            <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

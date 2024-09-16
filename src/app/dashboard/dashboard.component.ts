@@ -15,7 +15,6 @@ import { SidenavComponent } from '../sidenav/sidenav.component';
   imports: [RouterOutlet, HeaderComponent, FooterComponent, MatIconModule, MatToolbarModule, MatButtonModule, MatSidenavModule, SidenavComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
-  animations: [fadeAnimation],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 
