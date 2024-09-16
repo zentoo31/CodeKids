@@ -1,3 +1,8 @@
 
 html, body { height: 100%; }
 body { margin: 0;   font-family: "SUSE", sans-serif;}
+
+
+:root{
+    --primary-color: #0039A9;
+}

@@ -16,7 +16,7 @@ $CodeKids-theme: mat.define-theme((
 
 $light-theme: mat.define-theme((
   color: (
-    theme-type: light,
+    theme-type: dark,
     primary: mat.$azure-palette,
     tertiary: mat.$blue-palette,
   )
@@ -24,4 +24,9 @@ $light-theme: mat.define-theme((
 
 :root {
   @include mat.all-component-themes($CodeKids-theme);
+}
+
+
+.dark{
+  @include mat.all-component-colors($light-theme);
 }

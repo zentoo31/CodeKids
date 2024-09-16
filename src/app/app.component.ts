@@ -1,17 +1,23 @@
 import { Component} from '@angular/core';
 import { fadeAnimation } from '../animations/fadeIn';
-import { MainComponent } from './main/main.component';
 import { RouterOutlet } from '@angular/router';
+import { ThemeService } from './services/theme.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [MainComponent, RouterOutlet],
+  imports: [ RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [fadeAnimation]
 })
 
 export class AppComponent {
-    
+  isDarkMode = false;
+
+  constructor(private themeService: ThemeService) {
+    this.themeService.isDarkMode$.subscribe(isDarkMode => {
+      this.isDarkMode = isDarkMode;
+    });
+  }
 }
 

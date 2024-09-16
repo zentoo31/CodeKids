@@ -7,7 +7,7 @@
 </div>
 <mat-nav-list>
     @for (item of menuItem(); track $index) {
-        <a mat-list-item [routerLink]="[item.route]" routerLinkActive="router-link-active" >
+        <a mat-list-item class="menu-item" [routerLink]="[item.route]" routerLinkActive="selected-menu-item" #rla = "routerLinkActive" [activated] = "rla.isActive" >
             <mat-icon matListItemIcon>{{item.icon}}</mat-icon>
             @if (!sideNavCollapsed()) {
                 <span matListItemTitle>{{item.label}}</span>

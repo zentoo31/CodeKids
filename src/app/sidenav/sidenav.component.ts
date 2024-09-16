@@ -1,7 +1,7 @@
 import { Component, computed, Input, signal } from '@angular/core';
 import {MatListModule} from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
 export type MenuItem = {
   icon: string,
   label: string,
@@ -11,7 +11,7 @@ export type MenuItem = {
 @Component({
   selector: 'app-sidenav',
   standalone: true,
-  imports: [MatListModule, MatIconModule, RouterLink],
+  imports: [MatListModule, MatIconModule, RouterModule],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.css'
 })
