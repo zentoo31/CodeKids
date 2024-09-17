@@ -1,2 +1,31 @@
-<p>main works!</p>
-<a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" >Dashboard</a>
+<div class="allView">
+    <div class="absolute-content">
+        <pre>
+            <br>{{textCode.repeat(10)}}
+        </pre>             
+    </div>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+        <a class = "d-inline-flex link-body-emphasis text-decoration-none" [routerLink]="['/dashboard']" routerLinkActive="router-link-active">
+            <span>&lt;CodeKids Academy/&gt;</span>
+        </a>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="" class="nav-link px-2">&lt;Inicio/&gt;</a></li>
+            <li><a href="" class="nav-link px-2">&lt;Cursos/&gt;</a></li>
+            <li><a href="" class="nav-link px-2">&lt;Acerca_de_Nosotros/&gt;</a></li>
+            <li><a href="" class="nav-link px-2">&lt;Contacto/&gt;</a></li>
+        </ul>
+        <div class="col-md-3 text-end">
+            <button class="btn btn-outline-primary me-2" type="button">Iniciar sesión</button>
+            <button class="btn btn-primary">Registrarse</button>
+        </div>
+    </header>
+    <div class="hero-content">
+        <h1 [@typingAnimation]>Descubre el poder de la programación </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, alias qui? Quidem magni consequatur porro molestiae? 
+            Delectus quae omnis corporis non perspiciatis corrupti sed. Ad porro deleniti rerum officiis! Necessitatibus.
+        </p>
+        <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" >Dashboard</a>
+    </div>
+
+</div>

@@ -13,5 +13,5 @@ export const routes: Routes = [
         {path: 'subjects', component: SubjectsComponent}
     ]},
     {path: 'main', component: MainComponent},
-    {path:'', redirectTo: '/main',pathMatch:'full'}
+    {path:'', redirectTo: '/main', pathMatch:'full'}
 ];
