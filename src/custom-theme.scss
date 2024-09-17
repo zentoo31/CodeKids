@@ -2,7 +2,6 @@
 
 @include mat.core();
 
-// Define the theme object.
 $CodeKids-theme: mat.define-theme((
   color: (
     theme-type: dark,
