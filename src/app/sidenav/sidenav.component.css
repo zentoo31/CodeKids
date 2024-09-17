@@ -36,6 +36,6 @@
 }
 
 .selected-menu-item{
-    border-left-color: var(--primary-color);
+    border-left-color: var(--text-gradient);
     background: rgba(0, 0, 0, 0.05);
 }

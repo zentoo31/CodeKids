@@ -5,4 +5,5 @@ body { margin: 0;   font-family: "SUSE", sans-serif;}
 
 :root{
     --primary-color: #0039A9;
+    --text-gradient: linear-gradient(to right, #a78bfa, #ec4899); 
 }
