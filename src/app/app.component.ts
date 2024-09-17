@@ -2,11 +2,10 @@ import { Component} from '@angular/core';
 import { fadeAnimation } from '../animations/fadeIn';
 import { RouterOutlet } from '@angular/router';
 import { ThemeService } from './services/theme.service';
-import { SpinnerComponent } from './util/spinner/spinner.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ RouterOutlet, SpinnerComponent],
+  imports: [ RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [fadeAnimation]

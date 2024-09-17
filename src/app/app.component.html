@@ -1,4 +1,3 @@
 <main [@fadeAnimation]="isDarkMode ? 'dark' : 'light'">
     <router-outlet #outlet="outlet" [@fadeAnimation]="outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']"></router-outlet>
 </main>
-<spinner-loading></spinner-loading>
