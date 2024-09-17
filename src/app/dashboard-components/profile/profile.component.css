@@ -4,3 +4,11 @@ mat-card-content{
     align-content: center;
     text-align: center;
 }
+
+img{
+    border: 2px solid;
+}
+
+mat-card-title{
+    margin: 10px;
+}
