@@ -5,6 +5,17 @@ mat-card-content{
     text-align: center;
 }
 
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
 img{
     border: 2px solid;
 }
